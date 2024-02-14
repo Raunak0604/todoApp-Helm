@@ -2,7 +2,7 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: todoApp-Hpa
+  name: todoapp-hpa
   annotations:
    {{- include "ui.labels" . | nindent 4 }}
 spec:

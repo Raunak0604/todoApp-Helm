@@ -9,6 +9,7 @@ spec:
   - name: http
     port: 8000
     targetPort: 8000
+    nodePort: 30008
   selector:
     app: todoApp
   type: NodePort

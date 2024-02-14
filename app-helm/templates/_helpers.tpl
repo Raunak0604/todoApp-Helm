@@ -1,4 +1,4 @@
 {{- define "ui.labels" -}}
-app: todoApp
+app: todoapp
 env: {{ .Values.app.env }}
 {{- end -}}

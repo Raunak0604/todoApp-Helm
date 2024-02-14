@@ -8,14 +8,14 @@ spec:
   replicas: {{ .Values.app.replicas }}
   selector:
     matchLabels:
-      app: todoApp
+      app: todoapp
   template:
     metadata:
       labels:
      {{- include "ui.labels" . | nindent 8 }}
     spec:
       containers:
-        - name: todoApp
+        - name: todoapp
           image: {{ .Values.app.image }}
           resources:
           {{- toYaml .Values.app.computeres | nindent 12 }}

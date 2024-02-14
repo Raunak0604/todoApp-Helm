@@ -11,5 +11,5 @@ spec:
     targetPort: 8000
     nodePort: 30008
   selector:
-    app: todoApp
+    app: todoapp
   type: NodePort

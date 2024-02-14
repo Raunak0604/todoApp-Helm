@@ -17,5 +17,3 @@ spec:
       containers:
         - name: todoapp
           image: {{ .Values.app.image }}
-          # resources:
-          # {{- toYaml .Values.app.computeres | nindent 12 }}

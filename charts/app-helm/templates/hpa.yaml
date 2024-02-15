@@ -1,4 +1,3 @@
-{{- if .Values.hpa.enabled -}}
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
@@ -14,4 +13,3 @@ spec:
     name: react-ui
   targetCPUUtilizationPercentage: {{ .Values.hpa.targetCPUUtilizationPercentage }}
 
-{{- end -}}
